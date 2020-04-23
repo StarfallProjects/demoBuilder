@@ -1,0 +1,10 @@
+{% include "partials/head.njk" %}
+{% include "partials/empty-header.njk" %}
+<main>
+<h1>{{ title }}</h1>
+<div class="content">
+{{ content | safe }}
+</div>
+</main>
+<iframe id="helpFrame" name="helpFrame" src=""></iframe>
+{% include "partials/footer.njk" %}

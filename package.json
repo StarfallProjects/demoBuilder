@@ -1,0 +1,20 @@
+{
+  "name": "DemoSkeleton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "cross-env ELEVENTY_ENV=dev eleventy --serve",
+    "build": "cross-env ELEVENTY_ENV=prod eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Deborah Barnard - Starfall Projects",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-navigation": "^0.1.5",
+    "cross-env": "^7.0.2"
+  }
+}

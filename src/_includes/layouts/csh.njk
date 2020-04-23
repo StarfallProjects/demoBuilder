@@ -1,0 +1,14 @@
+{% include "partials/head.njk" %}
+<main>
+<span class="closeIcon">X</span>
+<main>
+<h1>{{ title }}</h1>
+{{ content | safe }}
+</main>
+<script>
+for(let i=0; i<document.links.length; i++) {
+    document.links[i].target="_blank";
+}
+</script>
+</body>
+</html>
