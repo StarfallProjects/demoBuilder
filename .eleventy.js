@@ -29,14 +29,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksShortcode("form", function(label, value, target, helpTarget){
         if(helpTarget != null){
             return `<div class="formWrapper"><span class="helpIcon" id=${helpTarget}>?</span><form action=${target}>
-            <label>${label}</label>
-            <input type="text" value=${value}>
+            <label for="exampleForm">${label}</label>
+            <input type="text" id="exampleForm" value=${value}>
             <input type="submit" value="Submit">
         </form></div>`;
         } else {
             return `<div class="formWrapper"><form action=${target}>
-            <label>${label}</label>
-            <input type="text" value=${value}>
+            <label for="exampleForm">${label}</label>
+            <input type="text" id="exampleForm" value=${value}>
             <input type="submit" value="Submit">
         </form></div>`;
         }
@@ -44,14 +44,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksShortcode("checkbox", function(label, value, target, helpTarget){
         if(helpTarget != null){
         return `<div class="formWrapper"><span class="helpIcon" id=${helpTarget}>?</span><form class="checkbox" action=${target}>
-        <label>${label}</label>
-        <input type="checkbox" value=${value} checked="checked"><br />       
+        <label for="checkboxForm">${label}</label>
+        <input type="checkbox" id="checkboxForm" value=${value} checked="checked"><br />       
         <input type="submit" value="Submit">
       </form></div>`;
     } else {
         return `<div class="formWrapper"><form class="checkbox" action=${target}>
-        <label>${label}</label>
-        <input type="checkbox" value=${value} checked="checked"><br />       
+        <label for="checkboxForm">${label}</label>
+        <input type="checkbox" id="checkboxForm" value=${value} checked="checked"><br />       
         <input type="submit" value="Submit">
       </form></div>`
     }
@@ -59,14 +59,14 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addNunjucksShortcode("radio", function(label, value, target, helpTarget){
         if(helpTarget != null){
         return `<div class="formWrapper"><span class="helpIcon" id=${helpTarget}>?</span><form class="radio" action=${target}>
-        <label>${label}</label>
-        <input type="radio" value=${value} checked="checked"><br />      
+        <label for="radioForm">${label}</label>
+        <input type="radio" id="radioForm" value=${value} checked="checked"><br />      
         <input type="submit" value="Submit">
       </form></div>`;
     } else {
         return `<div class="formWrapper"><form class="radio" action=${target}>
-        <label>${label}</label>
-        <input type="radio" value=${value} checked="checked"><br />      
+        <label for="radioForm">${label}</label>
+        <input type="radio" id="radioForm" value=${value} checked="checked"><br />      
         <input type="submit" value="Submit">
       </form>`
     }

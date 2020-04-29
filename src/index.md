@@ -1,6 +1,7 @@
 ---
 layout: layouts/website.njk
 title: Create interactive demos with 11ty
+description: Create interactive demos with 11ty
 eleventyNavigation:
   key: Home
   order: 100
