@@ -16,5 +16,8 @@
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-navigation": "^0.1.5",
     "cross-env": "^7.0.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1"
   }
 }
