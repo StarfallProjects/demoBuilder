@@ -110,10 +110,9 @@ ul {
     border: 1px solid black;
     border-radius: 10px;
     display:none;
-    max-height: 80%;
-    min-height: 60%;
+    height: 80%;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
     position: fixed;
     width: 60%;
     z-index: 999;

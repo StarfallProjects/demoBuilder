@@ -7,7 +7,7 @@ To add a square button to a `.md` or `.njk` file, use the `squareButton` Nunjuck
 * Title: the main title of the button
 * Info: a short description
 * Target: the file that should open when a user clicks the button
-* Help target: optional. The CSH file that should open when a user clicks the help icon. If you do not include this parameter, the help icon does not display.
+* {% include "../snippets/help-target.md" %}
 
 ## Example:
 
