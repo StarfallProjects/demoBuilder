@@ -4,13 +4,11 @@ title: About
 description: About this site
 eleventyNavigation:
   key: About
-  order: 200
+  order: 400
 ---
+{% alignLeft %}
 
 
-This is an [11ty](https://www.11ty.dev/) project, designed for creating interactive software demos. It's hosted on [Netlify](https://www.netlify.com/).
-
-View the [GitHub repository](https://github.com/StarfallProjects/demoSkeleton).
 
 ## Background
 
@@ -19,3 +17,7 @@ This project was inspired by some product management work I did for a client. I 
 * An interactive, shareable demo site, useful for presenting to management.
 * A way to thoroughly think through the workflow and functionality of the app.
 * A clear demonstration of ideas and requirements, which can then be picked up by design and development.
+
+> The demo site is intended to be an intermediate step between initial notes and ideas, and wireframing. You could create a detailed wireframe on top of this skeleton, but it would take some effort.
+
+{% endalignLeft %}

@@ -75,6 +75,10 @@ module.exports = function(eleventyConfig) {
         return `<div class="demoNote">${content}</div>`;
     });
 
+    eleventyConfig.addPairedShortcode("alignLeft", function(content) {
+        return `<div style="text-align:left;">${content}</div>`;
+    });
+
     // Dates
     eleventyConfig.addFilter("readableDate", dateObj => {
        return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
