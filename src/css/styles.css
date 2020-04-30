@@ -96,6 +96,17 @@ nav {
     justify-content: space-between;
 }
 
+ol {
+    display: block;
+    list-style: decimal;   
+    text-align: left;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 p {
     margin: 10px 0;
 }
