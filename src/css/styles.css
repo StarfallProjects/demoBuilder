@@ -165,15 +165,17 @@ ul {
     margin-bottom: 2rem;
     margin-top: 2rem;
     padding: 10px;
+    position: relative;
     width:250px;
 }
 
 .helpIcon, .closeIcon {
     border: 1px solid black;
     border-radius: 50%;
-    float: right;
     font-weight: bold;
     padding: 3px;
+    position: absolute;
+    right: 10px;
     text-align: center;
     width: 25px;
 }
